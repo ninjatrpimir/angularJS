@@ -2,8 +2,8 @@
  * Created by miha on 07.04.2015 16:24.
  */
 
-app.service("svcUser", ['$rootScope', '$localStorage', 'jwtHelper', '$timeout', 'svcApi', 'svcTools', '$filter',
-    function ($rootScope, $localStorage, jwtHelper, $timeout, svcApi, svcTools, $filter) {
+app.service("svcUser", ['$rootScope', 'svcApi', 'svcTools', '$filter',
+    function ($rootScope, svcApi, svcTools, $filter) {
 
         console.log("svcUser");
 
