@@ -1,18 +1,9 @@
 /**
- * Created by miha on 01.04.2015 10:30.
+ * Created by zugi on 24.09.2019 14:30
  */
-var app = angular.module("app", ['ui.router', 'dx']);
-app.controller("mainCtrl", ["$rootScope", "$scope",
-    function ($rootScope, $scope) {
 
-        // Globalize.culture(svcUser.getUserLanguage());
-        // console.log("svcUser.getUserLanguage()", svcUser.getUserLanguage());
+'use strict';
 
-        $rootScope.app_version = "build 24.03.2017 v1";
+// angular.module('app', ['ui.router', 'dx', 'app.routes', 'app.core', 'app.services', 'app.config', 'app.controller']);
+angular.module('app', ['ui.router', 'dx', 'app.routes', 'app.core', 'app.services', 'app.config']);
 
-
-
-        $log.info("Angular application started!");
-        //console.log($localStorage.token);
-    }
-]);
